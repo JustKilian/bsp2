@@ -10,7 +10,7 @@ import javax.swing.*;
  * A -> 1S | 1 | 0A
  * @version 1.0
  * @since 2023-12-10
- * @author Celine Janßen
+ * @author Celine J
  */
 public class Start extends JFrame {
     // start attributes
