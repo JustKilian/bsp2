@@ -98,18 +98,18 @@ public class Start extends JFrame {
                             setZ0(); // set the machine to state z1
                         }
                         break;
-                    default: // if the current state is not z0, z1 or z2
+                    default: // if the current state is not z0 or z1
                         output.setText("Error"); // tell the user that an error occurred
                         return; // and return to exit the method
                 } // end of switch (getMachineState())
             } // end of if (!s.equals("0") && !s.equals("1"))
         } // end of for (String s : inputString.split(""))
 
-        if (getMachineState().equals("z0")) { // check if the current state of the machine is z2
+        if (getMachineState().equals("z0")) { // check if the current state of the machine is z0
             output.setText("String is accepted"); // if it is, tell the user that the string is accepted
-        } else { // if the current state of the machine is not z2
+        } else { // if the current state of the machine is not z0
             output.setText("String is not accepted"); // tell the user that the string is not accepted
-        } // end of if (getMachineState().equals("z2"))
+        } // end of if (getMachineState().equals("z0"))
     } // end of private void check_ActionPerformed(ActionEvent evt)
 
     /**
